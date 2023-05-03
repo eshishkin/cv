@@ -1,7 +1,7 @@
 BasicInfo:
   FirstName: Eugene
   LastName: Shishkin
-  Photo: img/avatar.jpg
+  Photo: img/pic.jpg
   Contacts:
     - Icon: fab fa-linkedin
       Info: <a class="contact__link" href="https://www.linkedin.com/in/eugene-shishkin" target="_blank">LinkedIn</a> 

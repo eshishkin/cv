@@ -6,14 +6,13 @@ enableEmoji = true
 theme = "almeida-cv"
 disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
 
-baseURL = "https://eshishkin.github.io/cv/"
 title = "Eugene Shishkin - CV"
 #googleAnalytics = ""
 
 
 [languages]
   [languages.en]
-    contentDir = 'content/en'
+    contentDir = 'content'
     languageName = 'English'
     weight = 1
   [languages.ru]
