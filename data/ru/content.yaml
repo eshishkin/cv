@@ -1,0 +1,127 @@
+BasicInfo:
+  FirstName: Евгений
+  LastName: Шишкин
+  Photo: ../img/avatar.jpg
+  Contacts:
+    - Icon: fab fa-linkedin
+      Info: <a class="contact__link" href="https://www.linkedin.com/in/eugene-shishkin" target="_blank">LinkedIn</a> 
+    - Icon: fab fa-github
+      Info: <a class="contact__link" href="https://github.com/eshishkin" target="_blank">https://github.com/eshishkin</a> 
+    - Icon: fab fa-telegram
+      Info: <a class="contact__link" href="https://t.me/eshishkin" target="_blank">https://t.me/eshishkin</a> 
+#    - Icon: fas fa-envelope
+#      Info: <a class="contact__link" href="mailto:something">something</a>
+#    - Icon: fas fa-globe
+#      Info: <a class="contact__link" href="my personap page" target="_blank">my personal page name</a>
+    - Icon: fas fa-map-marker-alt
+      Info: Россия, Ижевск
+
+Profile: | 
+    <p> Меня зовут Шишкин Евгений. Имею 10+ лет опыта в разработке программного обеспечения. 
+    Несмотря на то, что проработал много лет в одной компании, за моими плечами много проектов из разных сфер деятельности (от финтеха до типографии). 
+    По большей части я специализируюсь на языке Java, но в своих проектах иногда использую JS/Python. В студенческие годы эксперементировал с Haskel/Clojure</p>
+    
+    <br/>
+    
+    <p>Помимо, собственно, разработки уделяю время для погружения в DevOps и IT менеджмент. 
+    В свободное время увлекаюсь астрономие (есть 10 дюймовый телескоп), фотографией, путешествиями и хайкингом. Постоянно пытаюсь изучать что-то новое и не только по работе.</p>
+
+Experience:
+  - Employer: <a href="http://www.ardecs.com/?lang=ru">Ardecs</a>
+    Place: Izhevsk, Russia
+    Positions:
+      - Title: Lead Software Engineer
+        Date: Сен 2020 - Настояшее время
+        Details: |
+            Разработка бекенда в рамках банковской ифраструктуры
+
+            - Оптимизация производительности банковских сервисов.
+              - Был в команде разработки глобального кеширующего слоя поверх общебанковской АБС
+            - Разработка микросервисов на стандартном стеке (Java / Spring Boot)
+            - Упрощение процесса разрабоки 
+              - Создание общих библиотек, которые использовались в нескольких проектах в рамках организации 
+              - Создание генератора микросервисов
+            - Проведение интерью и менторинг
+        Badges: ['Java 11/17', 'Spring Boot', 'MongoDB', 'Apache Kafka', 'Agile']
+      - Title: Middle & Senior Software Engineer
+        Date: Авг 2014 - Сен 2020
+        Details: |
+            Разработка системы/портала для публикации научных трудов / статей
+
+            - Разработка и поддержка сервисов (~ 15 сервисов)
+            - Настройка CI пайплайнов для автоматизации тестов с использованием Docker и Jenkins
+            - Миграция с legacy сервисов на современный по тем временам стек (Spring 3.x -> Spring Boot 2.2 / WebFlux)
+            - Проработка архитектуры для части сервисов в месте аналитиками и архитекторами
+            - многонациональная команда из 25+ человек (Россия/США/Шри-Ланка), использовали SAFe, все общение велось на английском
+            - Был лидом небольшой подкоманды из 3 человек
+        Badges: ['Java 8', 'Spring Boot', 'Redis', 'Kubernetes', 'Docker']
+      - Title: Junior Software Engineer
+        Date: Май 2012 - Авг 2014
+        Details: |
+            Разработка системы для автоматизации процессов типографии
+
+            - Формализация и реализация бизнес процессов с помощью нотации BPMN
+            - Разработка сервиса по спецификации (backend - java, frontend - vaadin)
+            - Команда из 4 человек, активно использовали Scrum в работе
+        Badges: ['Java 6/7', 'EJB', 'JBoss AS', 'ActivitiBPM', 'Vaadin 6']
+
+Education:
+  - Course: Математика и компьютерные науки
+    Place: <a href="https://udsu.ru">Удмуртский государственный Университет</a>
+    Date: Сен 2013 - Июль 2015
+    Details: Магистр математики
+  - Course: Информационные технологии
+    Place: <a href="https://udsu.ru">Удмуртский государственный Университет</a>
+    Date: Сен 2009 - Июль 2013
+    Details: Бакалавр информационных тезнологий
+
+#References:
+#  - Name: Person One
+#    Relation: Co-worker at Super Cool Company
+#    Contacts:
+#    - Icon: fas fa-phone
+#     Info: +11111111111
+
+Skills:
+  - Family: Programming
+    Items:
+      - Java 8/11/17
+      - SQL
+  - Family: Frameworks
+    Items:
+      - Spring & Spring Boot 
+      - Hibernate
+      - MyBatis
+  - Family: Tools
+    Items:
+      - MySQL
+      - Mongo
+      - Redis
+      - Kafka
+  - Family: Developer Tools
+    Items:
+      - Git
+      - Maven & Gradle
+      - Docker
+      - Kubernetes
+      - Jenkins
+      - AWS (EC2, S3, Lambda)
+
+Languages:
+  - Name: Русский
+    Level: Родной
+  - Name: Английский
+    Level: C1
+
+#Diplomas:
+#  - Diploma 1
+
+Interests:
+  - Фотография
+  - Астрономия
+  - Пешие походы
+  - Иностранные языки
+  - Путешествия
+
+  
+

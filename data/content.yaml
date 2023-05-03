@@ -1,0 +1,125 @@
+BasicInfo:
+  FirstName: Eugene
+  LastName: Shishkin
+  Photo: img/avatar.jpg
+  Contacts:
+    - Icon: fab fa-linkedin
+      Info: <a class="contact__link" href="https://www.linkedin.com/in/eugene-shishkin" target="_blank">LinkedIn</a> 
+    - Icon: fab fa-github
+      Info: <a class="contact__link" href="https://github.com/eshishkin" target="_blank">https://github.com/eshishkin</a> 
+    - Icon: fab fa-telegram
+      Info: <a class="contact__link" href="https://t.me/eshishkin" target="_blank">https://t.me/eshishkin</a> 
+#    - Icon: fas fa-envelope
+#      Info: <a class="contact__link" href="mailto:something">something</a>
+#    - Icon: fas fa-globe
+#      Info: <a class="contact__link" href="my personap page" target="_blank">my personal page name</a>
+    - Icon: fas fa-map-marker-alt
+      Info: Russia, Izhevsk
+
+Profile: | 
+    <p>My name is Eugene. I am a software developer with 10+ years of experience. 
+    Though I have been working in the same company for several years, I have a lot of different projects done. 
+    Mostly I use Java, but tried JS/Python in my sideprojects.</p>
+
+    <br/>
+
+    <p>Apart from programming I am interested in DevOps and IT management. 
+    As for hobbies - I like astronomy (I have 10 inch dobsonian), photography and hiking.
+    I always try to learn something new everyday.</p>
+
+Experience:
+  - Employer: <a href="http://www.ardecs.com/?lang=en">Ardecs</a>
+    Place: Izhevsk, Russia
+    Positions:
+      - Title: Lead Software Engineer
+        Date: Sep 2020 - Present
+        Details: |
+            Bank system backend development
+
+            - Improving total performance of bank services by creating (as a part of a team) global cache layer for central bank system (Equation)
+            - Developing micro services in cooperation with agile teams, business and architect representatives
+            - Improving development processes
+              - Creating several common java libraries that were used across projects in the organization
+              - Creating a simple generator for microservices
+            - Interviewing and mentoring teammates
+        Badges: ['Java 11/17', 'Spring Boot', 'MongoDB', 'Apache Kafka', 'Agile']
+      - Title: Middle & Senior Software Engineer
+        Date: Aug 2014 - Sep 2020
+        Details: |
+            Development of a system/portal for publishing scientific papers
+
+            - Implementation and maintenance services (~ 15 services)
+            - Set up and configure CI pipeline for test automation (using Docker and Jenkins)
+            - Migration to a modern (at that time) stack (Spring 3.x -> Spring Boot 2.2 / WebFlux)
+            - Design architecture for some service with business and architecture representatives
+            - 25+ people distributed team (Russia/USA/Sri-Lanka), active SAFe usage
+            - Was a lead for a small team (3 people)
+        Badges: ['Java 8', 'Spring Boot', 'Redis', 'Kubernetes', 'Docker']
+      - Title: Junior Software Engineer
+        Date: May 2012 - Aug 2014
+        Details: |
+            Development of an automated system for a print shop
+
+            - Implement and design business processes using BPNM notation based on business requirements
+            - Implement services by requiremens (backend - java, frontend - vaadin)
+            - Small team of 4 people, active Scrum usage
+        Badges: ['Java 6/7', 'EJB', 'JBoss AS', 'ActivitiBPM', 'Vaadin 6']
+
+Education:
+  - Course: Computer Science and Math
+    Place: <a href="https://udsu.ru/English">Udmurt State University</a>
+    Date: Sep 2013 - July 2015
+    Details: Master Degree in Math (2015)
+  - Course: Computer Science
+    Place: <a href="https://udsu.ru/English">Udmurt State University</a>
+    Date: Sep 2009 - July 2013
+    Details: Bachelor Degree in Computer Science
+
+#References:
+#  - Name: Person One
+#    Relation: Co-worker at Super Cool Company
+#    Contacts:
+#    - Icon: fas fa-phone
+#     Info: +11111111111
+
+Skills:
+  - Family: Programming
+    Items:
+      - Java 8/11/17
+      - SQL
+  - Family: Frameworks
+    Items:
+      - Spring & Spring Boot 
+      - Hibernate
+      - MyBatis
+  - Family: Tools
+    Items:
+      - MySQL
+      - Mongo
+      - Redis
+      - Kafka
+  - Family: Developer Tools
+    Items:
+      - Git
+      - Maven & Gradle
+      - Docker
+      - Kubernetes
+      - Jenkins
+      - AWS (EC2, S3, Lambda)
+
+Languages:
+  - Name: Russian
+    Level: Native
+  - Name: English
+    Level: C1
+
+#Diplomas:
+#  - Diploma 1
+
+Interests:
+  - Photography
+  - Stargazing
+  - Travelling
+  - Hiking
+  - Languages
+
