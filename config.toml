@@ -7,7 +7,7 @@ theme = "almeida-cv"
 disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
 
 title = "Eugene Shishkin - CV"
-#googleAnalytics = ""
+googleAnalytics = "G-7GKDXZK09P"
 
 
 [languages]
