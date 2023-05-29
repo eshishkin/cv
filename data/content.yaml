@@ -19,7 +19,7 @@ BasicInfo:
 Profile: | 
     <p>My name is Eugene. I am a software developer with 10+ years of experience. 
     Though I have been working in the same company for several years, I have a lot of different projects done. 
-    Mostly I use Java, but tried JS/Python in my sideprojects.</p>
+    Mostly I use Java, but tried JS/Python in my side projects.</p>
 
     <br/>
 
@@ -60,10 +60,10 @@ Experience:
         Details: |
             Development of an automated system for a print shop
 
-            - Implement and design business processes using BPNM notation based on business requirements
-            - Implement services by requiremens (backend - java, frontend - vaadin)
+            - Implement and design business processes using BPMN notation based on business requirements
+            - Implement services by requirements (backend - java, frontend - vaadin)
             - Small team of 4 people, active Scrum usage
-        Badges: ['Java 6/7', 'EJB', 'JBoss AS', 'ActivitiBPM', 'Vaadin 6']
+        Badges: ['Java 6/7', 'EJB', 'JBoss AS', 'Activiti BPM', 'Vaadin 6']
 
 Education:
   - Course: Computer Science and Math
