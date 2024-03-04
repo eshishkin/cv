@@ -19,7 +19,7 @@ BasicInfo:
 Profile: | 
     <p>My name is Eugene. I am a software developer with 10+ years of experience. 
     Though I have been working in the same company for several years, I have a lot of different projects done. 
-    Mostly I use Java, but tried JS/Python in my side projects.</p>
+    Mostly I use Java language, but tried JS/Python in my side projects.</p>
 
     <br/>
 
@@ -28,37 +28,51 @@ Profile: |
     I always try to learn something new everyday.</p>
 
 Experience:
-  - Employer: <a href="http://www.ardecs.com/?lang=en">Ardecs</a>
+  - Employer: <a href="http://www.ardecs.com/?lang=en">Ardecs Ltd</a>
     Place: Izhevsk, Russia
     Positions:
       - Title: Lead Software Engineer
-        Date: Sep 2020 - Present
+        Date: Jan 2023 - Present
         Details: |
-            Bank system backend development
+          #### Development and maintenance services for a department of small business in a bank
 
-            - Improving total performance of bank services by creating (as a part of a team) global cache layer for central bank system (Equation)
-            - Developing micro services in cooperation with agile teams, business and architect representatives
-            - Improving development processes
-              - Creating several common java libraries that were used across projects in the organization
-              - Creating a simple generator for microservices
-            - Interviewing and mentoring teammates
+          - Development and design microservices in cooperation with agile teams, business and architect representatives
+          - Migration to modern Java (Java 8/11 -> Java 17/21)
+          - Writing and maintaining Ansible scripts that were used for deployment services on environments
+          - Interviewing candidates and mentoring teammates
+        Badges: ['Java 17/21', 'Spring Boot', 'MongoDB', 'Ansible', 'Kubernetes']
+
+      - Title: Lead Software Engineer
+        Date: Sep 2020 - Jan 2023
+        Details: |
+          #### Development of global cache layer on top of central banking system
+
+          - Improvement of total performance of bank services by creating (as a part of a team) global cache layer on top of central banking system (Misys Equation)
+          - Development and design microservices in cooperation with agile teams, business and architect representatives
+            - MongoDB + Spring Boot + Apache Kafka (for communication between services)
+          - Improvement of development processes on a team level
+            - Created several common java libraries that were used across projects in the organization
+            - Created a simple generator for microservices based on groovy and mustache templates
+          - Interviewing candidates and mentoring teammates
         Badges: ['Java 11/17', 'Spring Boot', 'MongoDB', 'Apache Kafka', 'Agile']
+
       - Title: Middle & Senior Software Engineer
         Date: Aug 2014 - Sep 2020
         Details: |
-            Development of a system/portal for publishing scientific papers
+          #### Development of a system/portal for publishing scientific papers
 
             - Implementation and maintenance services (~ 15 services)
             - Set up and configure CI pipeline for test automation (using Docker and Jenkins)
             - Migration to a modern (at that time) stack (Spring 3.x -> Spring Boot 2.2 / WebFlux)
-            - Design architecture for some service with business and architecture representatives
+            - Design architecture for several services with business and architecture representatives
             - 25+ people distributed team (Russia/USA/Sri-Lanka), active SAFe usage
-            - Was a lead for a small team (3 people)
-        Badges: ['Java 8', 'Spring Boot', 'Redis', 'Kubernetes', 'Docker']
+            - Was a tech lead for a small team (3 people)
+        Badges: ['Java 8', 'Spring Boot', 'Redis', 'Kubernetes', 'Docker', 'MySQL']
+
       - Title: Junior Software Engineer
         Date: May 2012 - Aug 2014
         Details: |
-            Development of an automated system for a print shop
+          #### Development of an automated system for a print shop
 
             - Implement and design business processes using BPMN notation based on business requirements
             - Implement services by requirements (backend - java, frontend - vaadin)
@@ -83,35 +97,43 @@ Education:
 #     Info: +11111111111
 
 Skills:
-  - Family: Programming
+  - Family: Programming Languages
     Items:
       - Java 8/11/17
       - SQL
   - Family: Frameworks
     Items:
-      - Spring & Spring Boot 
+      - Spring / Spring Boot (2.x / 3.x)
+      - Spring Cloud
       - Hibernate
       - MyBatis
-  - Family: Tools
+  - Family: Databases and Software
     Items:
       - MySQL
       - Mongo
       - Redis
-      - Kafka
-  - Family: Developer Tools
+      - Apache Kafka
+  - Family: DevOps Tools
     Items:
-      - Git
-      - Maven & Gradle
       - Docker
       - Kubernetes
       - Jenkins
+      - Ansible
+  - Family: Cloud Providers
+    Items:
       - AWS (EC2, S3, Lambda)
+      - Yandex Cloud
+  - Family: Other
+    Items:
+      - Git / SVN
+      - Maven / Gradle
+      - JUnit / Spock
 
 Languages:
   - Name: Russian
     Level: Native
   - Name: English
-    Level: C1
+    Level: B2
 
 #Diplomas:
 #  - Diploma 1
