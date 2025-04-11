@@ -11,8 +11,8 @@ BasicInfo:
       Info: <a class="contact__link" href="https://t.me/eshishkin" target="_blank">https://t.me/eshishkin</a> 
 #    - Icon: fas fa-envelope
 #      Info: <a class="contact__link" href="mailto:something">something</a>
-#    - Icon: fas fa-globe
-#      Info: <a class="contact__link" href="my personap page" target="_blank">my personal page name</a>
+    - Icon: fas fa-globe
+      Info: <a class="contact__link" href="https://eshishkin.github.io/" target="_blank">https://eshishkin.github.io/</a>
     - Icon: fas fa-map-marker-alt
       Info: Russia, Izhevsk
 
@@ -99,26 +99,37 @@ Education:
 Skills:
   - Family: Programming Languages
     Items:
-      - Java 8/11/17
+      - Java 8/11/17/21
       - SQL
-  - Family: Frameworks
+  - Family: Spring Ecosystem
     Items:
-      - Spring / Spring Boot (2.x / 3.x)
+      - Spring Boot (2.x / 3.x)
       - Spring Cloud
+      - Spring Data
+      - Spring Security
+      - Spring AI
+  - Family: ORM
+    Items:
       - Hibernate
       - MyBatis
-  - Family: Databases and Software
+  - Family: Databases
     Items:
-      - MySQL
+      - MySQL/Postgres
       - Mongo
       - Redis
+  - Family: Messaging
+    Items:
       - Apache Kafka
+      - JMS
   - Family: DevOps Tools
     Items:
       - Docker
       - Kubernetes
-      - Jenkins
       - Ansible
+      - Jenkins
+      - Github Actions (pet projects)
+      - Terraform (pet projects)
+      - n8n (pet projects)
   - Family: Cloud Providers
     Items:
       - AWS (EC2, S3, Lambda)
