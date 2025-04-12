@@ -28,56 +28,67 @@ Profile: |
     I always try to learn something new everyday.</p>
 
 Experience:
-  - Employer: <a href="http://www.ardecs.com/?lang=en">Ardecs Ltd</a>
+  - Title: Lead Software Engineer
+    Date: Jan 2023 - Present
+    Employer: <a href="http://www.ardecs.com/?lang=en">Ardecs Ltd</a>
     Place: Izhevsk, Russia
-    Positions:
-      - Title: Lead Software Engineer
-        Date: Jan 2023 - Present
-        Details: |
-          #### Development and maintenance services for a department of small business in a bank
+    Description: Development and maintenance services for a department of small business in a bank
+    Details: |
+      - Development and design microservices in cooperation with agile teams, business and architect representatives
+      - Migration to modern Java (Java 8/11 -> Java 17/21)
+      - Writing and maintaining Ansible scripts that were used for deployment services on environments
+      - Interviewing candidates and mentoring teammates
+    Badges: ['Java 17/21', 'Spring Boot', 'MongoDB', 'Ansible', 'Kubernetes']
 
-          - Development and design microservices in cooperation with agile teams, business and architect representatives
-          - Migration to modern Java (Java 8/11 -> Java 17/21)
-          - Writing and maintaining Ansible scripts that were used for deployment services on environments
-          - Interviewing candidates and mentoring teammates
-        Badges: ['Java 17/21', 'Spring Boot', 'MongoDB', 'Ansible', 'Kubernetes']
+  - Title: Lead Software Engineer
+    Date: Sep 2020 - Jan 2023
+    Employer: <a href="http://www.ardecs.com/?lang=en">Ardecs Ltd</a>
+    Place: Izhevsk, Russia
+    Description: |
+      The project was related to one of the banks in Russia. The main goal of the project was performance optimization 
+      of central banking system. The banking system itself was very old, business logic was written using IBM RPG programming language.
+      It was decided to implement a global cache on top of the system and split read/write operation flows (CQRS). 
+      All write and non-critical read were operations  routed to the old system, critical read operations were routed 
+      to a new system. The system we implemented has the same business logic but written purely in Java.
+    Details: |
+      - Improvement of total performance of bank services by creating (as a part of a team) global cache layer on top of central banking system (Misys Equation)
+      - Development and design microservices in cooperation with agile teams, business and architect representatives
+        - MongoDB + Spring Boot
+        - Apache Kafka for data transfer from DB2 to Mongo 
+      - Improvement of development processes on a team level
+        - Created several common java libraries that were used across projects in the organization
+        - Created a simple generator for microservices based on groovy and mustache templates
+      - Interviewing candidates and mentoring teammates
+    Badges: ['Java 11/17', 'Spring Boot', 'MongoDB', 'Apache Kafka', 'Agile']
 
-      - Title: Lead Software Engineer
-        Date: Sep 2020 - Jan 2023
-        Details: |
-          #### Development of global cache layer on top of central banking system
+  - Title: Middle & Senior Software Engineer
+    Date: Aug 2014 - Sep 2020
+    Employer: <a href="http://www.ardecs.com/?lang=en">Ardecs Ltd</a>
+    Place: Izhevsk, Russia
+    Description: |
+      The main goal of the project was development of a system/portal for publishing scientific papers. In that portal
+      author can add their publication by DOI, see information about the publication (co-authors, 
+      publication status, dates), invite co-authors the the portal, pay for publication and publish articles 
+      using different licences.
+    Details: |
+        - Implementation and maintenance services (~ 15 services)
+        - Set up and configure CI pipeline for test automation (using Docker and Jenkins)
+        - Migration to a modern (at that time) stack (Spring 3.x -> Spring Boot 2.2 / WebFlux)
+        - Design architecture for several services with business and architecture representatives
+        - 25+ people distributed team (Russia/USA/Sri-Lanka), active SAFe usage
+        - Was a tech lead for a small team (3 people)
+    Badges: ['Java 8', 'Spring Boot', 'Redis', 'Kubernetes', 'Docker', 'MySQL']
 
-          - Improvement of total performance of bank services by creating (as a part of a team) global cache layer on top of central banking system (Misys Equation)
-          - Development and design microservices in cooperation with agile teams, business and architect representatives
-            - MongoDB + Spring Boot + Apache Kafka (for communication between services)
-          - Improvement of development processes on a team level
-            - Created several common java libraries that were used across projects in the organization
-            - Created a simple generator for microservices based on groovy and mustache templates
-          - Interviewing candidates and mentoring teammates
-        Badges: ['Java 11/17', 'Spring Boot', 'MongoDB', 'Apache Kafka', 'Agile']
-
-      - Title: Middle & Senior Software Engineer
-        Date: Aug 2014 - Sep 2020
-        Details: |
-          #### Development of a system/portal for publishing scientific papers
-
-            - Implementation and maintenance services (~ 15 services)
-            - Set up and configure CI pipeline for test automation (using Docker and Jenkins)
-            - Migration to a modern (at that time) stack (Spring 3.x -> Spring Boot 2.2 / WebFlux)
-            - Design architecture for several services with business and architecture representatives
-            - 25+ people distributed team (Russia/USA/Sri-Lanka), active SAFe usage
-            - Was a tech lead for a small team (3 people)
-        Badges: ['Java 8', 'Spring Boot', 'Redis', 'Kubernetes', 'Docker', 'MySQL']
-
-      - Title: Junior Software Engineer
-        Date: May 2012 - Aug 2014
-        Details: |
-          #### Development of an automated system for a print shop
-
-            - Implement and design business processes using BPMN notation based on business requirements
-            - Implement services by requirements (backend - java, frontend - vaadin)
-            - Small team of 4 people, active Scrum usage
-        Badges: ['Java 6/7', 'EJB', 'JBoss AS', 'Activiti BPM', 'Vaadin 6']
+  - Title: Junior Software Engineer
+    Date: May 2012 - Aug 2014
+    Employer: <a href="http://www.ardecs.com/?lang=en">Ardecs Ltd</a>
+    Place: Izhevsk, Russia
+    Description: Development of an automated system for a local print shop
+    Details: |
+        - Implement and design business processes using BPMN notation based on business requirements
+        - Implement services by requirements (backend - java, frontend - vaadin)
+        - Small team of 4 people, active Scrum usage
+    Badges: [ 'Java 6/7', 'EJB', 'JBoss AS', 'Activiti BPM', 'Vaadin 6' ]
 
 Education:
   - Course: Computer Science and Math

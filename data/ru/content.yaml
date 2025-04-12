@@ -4,26 +4,26 @@ BasicInfo:
   Photo: ../img/pic.jpg
   Contacts:
     - Icon: fab fa-linkedin
-      Info: <a class="contact__link" href="https://www.linkedin.com/in/eugene-shishkin" target="_blank">LinkedIn</a> 
+      Info: <a class="contact__link" href="https://www.linkedin.com/in/eugene-shishkin" target="_blank">LinkedIn</a>
     - Icon: fab fa-github
-      Info: <a class="contact__link" href="https://github.com/eshishkin" target="_blank">https://github.com/eshishkin</a> 
+      Info: <a class="contact__link" href="https://github.com/eshishkin" target="_blank">https://github.com/eshishkin</a>
     - Icon: fab fa-telegram
-      Info: <a class="contact__link" href="https://t.me/eshishkin" target="_blank">https://t.me/eshishkin</a> 
-#    - Icon: fas fa-envelope
-#      Info: <a class="contact__link" href="mailto:something">something</a>
+      Info: <a class="contact__link" href="https://t.me/eshishkin" target="_blank">https://t.me/eshishkin</a>
+    #    - Icon: fas fa-envelope
+    #      Info: <a class="contact__link" href="mailto:something">something</a>
     - Icon: fas fa-globe
       Info: <a class="contact__link" href="https://eshishkin.github.io/" target="_blank">https://eshishkin.github.io/</a>
     - Icon: fas fa-map-marker-alt
       Info: Россия, Ижевск
 
-Profile: | 
+Profile: |
     <p>Меня зовут Шишкин Евгений. Имею 10+ лет опыта в разработке программного обеспечения.
     Несмотря на то, что проработал много лет в одной компании, за моими плечами много проектов из разных сфер деятельности (от финтеха до типографии). 
     По большей части я специализируюсь на языке Java и стандартном стеке Spring / Spring Boot.
     Но в своих проектах иногда использую JS/Python. В последнее время активно погружаюсь в тему DevOps и IT менеджмент</p>
     
     <br/>
-
+    
     <p>Помимо основной работы увлекаюсь следующими направлениями
     <li style="margin-left: 15px">Астрономией и астрофотографией (у меня есть 10 дюймовый добсон и небольшая ED-шка)</li>
     <li style="margin-left: 15px">Фотографированием (в основном пезажная сьёмка для души)</li>
@@ -32,66 +32,84 @@ Profile: |
     </p>
 
 Experience:
-  - Employer: <a href="http://www.ardecs.com/?lang=ru">Ardecs</a>
-    Place: Izhevsk, Russia
-    Positions:
-      - Title: Lead Software Engineer
-        Date: Янв 2023 - Сегодня
-        Details: |
-          #### Разработка и поддержка банковских сервисов для работы с малым бизнесом в рамках Интернет банкинга
+  - Title: Lead Software Engineer
+    Date: Jan 2023 - Present
+    Employer: <a href="http://www.ardecs.com/?lang=ru">Ardecs</a>
+    Place: Ижевск, Россия
+    Description: |
+      Разработка и поддержка банковских сервисов для работы с малым и микро-бизнесом в рамках Интернет банкинга.
+    Details: |
+      - Разработка сервисов для облегчения работы малого бизнеса (заказы справок, оформление электронных доверенностей)
+      - Миграция на последние версии Java (Java 8/11 -> Java 17/21)
+      - Написание и поддержка части Ansible скриптов, которые использовались для развертвания приложений на среды
+      - Проведение технических интервью для новых кандидатов и менторинг коллег
+    Badges: ['Java 17/21', 'Spring Boot', 'MongoDB', 'Ansible', 'Kubernetes']
 
-          - Разработка сервисов для облегчения работы малого бизнеса (заказы справок, оформление электронных доверенностей)
-          - Миграция на последние версии Java (Java 8/11 -> Java 17/21)
-          - Написание и поддержка части Ansible скриптов, которые использовались для развертвания приложений на среды
-          - Проведение технических интервью для новых кандидатов и менторинг коллег
-        Badges: ['Java 17/21', 'Spring Boot', 'MongoDB', 'Ansible', 'Kubernetes']
+  - Title: Lead Software Engineer
+    Date: Sep 2020 - Jan 2023
+    Employer: <a href="http://www.ardecs.com/?lang=ru">Ardecs</a>
+    Place: Ижевск, Россия
+    Description: |
+      Проект от одного крупного банка в России. Основная цель проекта - оптимизация производительности банковской АБСю
+      Сама система довольно древняя, вся бизнес логика в ней написана на разных диалектах языка IBM RPG. В рамках выполнения
+      проекта архитекторами было принято решение о разделении потоков чтения/записи и разработке глобального 
+      слои поверх АБС-ки. По сути, CQRS в большом масштабе. Все операции записи уходили на АБС напрямую. 
+      Высоконагруженные операции на чтение уходили в новую систему. В разработанной системе были реализованы точно
+      такие алгоритмы расчетов как в АБС, только на языке Java и микросервисным подходом.
+    Details: |
+      - Был частью команды, которая занималась разработкой глобального кеширующего слоя поверх банковской АБС
+      - Разработка и дизайн микросервисов совместно с аналитиками и архитекторами
+        - MongoDB + Spring Boot
+        - Apache Kafka - для трансфера данных из DB2 в Mongo
+        - Разработка сервисов под IBM WebSphere для бесшовной интеграции нашей системы с системами-потребилетями
+      - Упрощение процесса разработки
+        - Создание общих библиотек, которые использовались в нескольких проектах в рамках организации
+        - Создание генератора микросервисов используя groovy и mustache шаблоны
+      - Проведение технических интервью для новых кандидатов и менторинг коллег
+    Badges: ['Java 11/17', 'Spring Boot', 'MongoDB', 'Apache Kafka', 'Agile']
 
-      - Title: Lead Software Engineer
-        Date: Сен 2020 - Янв 2023
-        Details: |
-          #### Разработка глобального кеширующего слоя поверх банковской АБС
+  - Title: Middle & Senior Software Engineer
+    Date: Aug 2014 - Sep 2020
+    Employer: <a href="http://www.ardecs.com/?lang=ru">Ardecs</a>
+    Place: Ижевск, Россия
+    Description: |
+      Проект по разработке системы/портала для публикации научных трудов / статей для крупного зарубежного издательства.
+      На портале авторы могли находить свои научные публикации, просматривать метаинформации по ним (список авторов,
+      даты публикации, текущий статус), приглашать соавторов в систему и оплачивать публикацию по разным правила 
+      и под разные лицензии.
+      
+      На проекте было около 15-20 микросервисов с бизнес логикой на Java, 
+      все разворачивалось на инфраструктуре AWS (EC2). Дополнительно были реализован портал для поддержки и менеджеров 
+      с возможностью конфигурирования основного приложения
+    Details: |
+      - Разработка и поддержка сервисов (~ 15 сервисов)
+      - Настройка CI пайплайнов для автоматизации тестов с использованием Docker и Jenkins
+      - Миграция с legacy сервисов на современный по тем временам стек (Spring 3.x -> Spring Boot 2.2 / WebFlux)
+      - Проработка архитектуры для части сервисов в месте аналитиками и архитекторами
+      - Многонациональная команда из 25+ человек (Россия/США/Шри-Ланка), использовали SAFe, все общение велось на английском
+      - Был лидом небольшой подкоманды из 3 человек
+    Badges: ['Java 8', 'Spring Boot', 'Redis', 'Kubernetes', 'Docker', 'MySQL']
 
-          - Был частью команды, которая занималась разработкой глобального кеширующего слоя поверх банковской АБС
-          - Разработка и дизайн микросервисов совместно с аналитиками и архитекторами
-            - MongoDB + Spring Boot + Apache Kafka (для получения данных из АБС)
-            - Разработка сервисов под IBM WebSphere для бесшовной интеграции нашей системы с системами-потребилетями
-          - Упрощение процесса разработки
-            - Создание общих библиотек, которые использовались в нескольких проектах в рамках организации
-            - Создание генератора микросервисов используя groovy и mustache шаблоны
-          - Проведение технических интервью для новых кандидатов и менторинг коллег
-        Badges: ['Java 11/17', 'Spring Boot', 'MongoDB', 'Apache Kafka', 'Agile']
-
-      - Title: Middle & Senior Software Engineer
-        Date: Авг 2014 - Сен 2020
-        Details: |
-            #### Разработка системы/портала для публикации научных трудов / статей
-
-            - Разработка и поддержка сервисов (~ 15 сервисов)
-            - Настройка CI пайплайнов для автоматизации тестов с использованием Docker и Jenkins
-            - Миграция с legacy сервисов на современный по тем временам стек (Spring 3.x -> Spring Boot 2.2 / WebFlux)
-            - Проработка архитектуры для части сервисов в месте аналитиками и архитекторами
-            - Многонациональная команда из 25+ человек (Россия/США/Шри-Ланка), использовали SAFe, все общение велось на английском
-            - Был лидом небольшой подкоманды из 3 человек
-        Badges: ['Java 8', 'Spring Boot', 'Redis', 'Kubernetes', 'Docker', 'MySQL']
-      - Title: Junior Software Engineer
-        Date: Май 2012 - Авг 2014
-        Details: |
-            #### Разработка системы для автоматизации процессов типографии
-
-            - Формализация и реализация бизнес процессов с помощью нотации BPMN
-            - Разработка сервиса по спецификации (backend - java, frontend - vaadin)
-            - Команда из 4 человек, активно использовали Scrum в работе
-        Badges: ['Java 6/7', 'EJB', 'JBoss AS', 'Activiti BPM', 'Vaadin 6']
+  - Title: Junior Software Engineer
+    Date: May 2012 - Aug 2014
+    Employer: <a href="http://www.ardecs.com/?lang=ru">Ardecs</a>
+    Place: Ижевск, Россия
+    Description: Разработка системы для автоматизации процессов локальной типографии
+    Details: |
+      - Формализация и реализация бизнес процессов с помощью нотации BPMN
+      - Разработка сервиса по спецификации (backend - java, frontend - vaadin)
+      - Команда из 4 человек, активно использовали Scrum в работе
+    Badges: [ 'Java 6/7', 'EJB', 'JBoss AS', 'Activiti BPM', 'Vaadin 6' ]
 
 Education:
-  - Course: Математика и компьютерные науки
-    Place: <a href="https://udsu.ru">Удмуртский государственный Университет</a>
-    Date: Сен 2013 - Июль 2015
-    Details: Магистр математики
-  - Course: Информационные технологии
-    Place: <a href="https://udsu.ru">Удмуртский государственный Университет</a>
-    Date: Сен 2009 - Июль 2013
-    Details: Бакалавр информационных технологий
+  - Course: Computer Science and Math
+    Place: <a href="https://udsu.ru/English">Udmurt State University</a>
+    Date: Sep 2013 - July 2015
+    Details: Master Degree in Math (2015)
+  - Course: Computer Science
+    Place: <a href="https://udsu.ru/English">Udmurt State University</a>
+    Date: Sep 2009 - July 2013
+    Details: Bachelor Degree in Computer Science
 
 #References:
 #  - Name: Person One
@@ -99,7 +117,6 @@ Education:
 #    Contacts:
 #    - Icon: fas fa-phone
 #     Info: +11111111111
-
 
 Skills:
   - Family: Programming Languages
@@ -146,20 +163,18 @@ Skills:
       - JUnit / Spock
 
 Languages:
-  - Name: Русский
-    Level: Родной
-  - Name: Английский
+  - Name: Russian
+    Level: Native
+  - Name: English
     Level: B2
 
 #Diplomas:
 #  - Diploma 1
 
 Interests:
-  - Фотография
-  - Астрономия
-  - Пешие походы
-  - Иностранные языки
-  - Путешествия
-
-  
+  - Photography
+  - Stargazing
+  - Travelling
+  - Hiking
+  - Languages
 
