@@ -5,7 +5,7 @@ enableEmoji = true
 
 theme = "almeida-cv"
 disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
-
+baseURL = "https://eshishkin.github.io/cv/"
 title = "Eugene Shishkin - CV"
 googleAnalytics = "G-7GKDXZK09P"
 
