@@ -1,0 +1,24 @@
+<section id="achievements" class="mb-24 py-12">
+    <h2 class="text-4xl font-bold mb-16">{{ .Title }}</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+        {{ range .Params.achievements }}
+        <div class="achievement-card">
+            {{ if .image }}
+            <div class="achievement-image">
+                <img src="{{ .image }}" alt="{{ .title }}" class="w-full h-48 object-cover rounded-lg mb-4">
+            </div>
+            {{ end }}
+            <div class="achievement-badge mb-3">
+                {{ .year }}
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ .title }}</h3>
+            <p class="text-gray-600 mb-4">{{ .description }}</p>
+            {{ if .url }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-dark font-semibold">
+                Learn more →
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>

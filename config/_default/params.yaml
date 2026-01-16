@@ -1,0 +1,37 @@
+author: Eugene Shishkin
+email: eugene.a.shishkin@gmail.com
+description: Software Developer with 14+ years, expanding expertise with AI/ML to build intelligent solutions.
+
+github: https://github.com/eshishkin
+location: Izhevsk, Russia
+profileImage: /images/profile.jpg
+
+social:
+  - name: mail
+    url: mailto:eugene.a.shishkin@gmail.com
+    icon: envelope.svg
+  - name: site
+    url: https://eshishkin.github.io
+    icon: globe.svg
+  - name: telegram
+    url: https://t.me/eshishkin
+    icon: telegram.svg
+    footer: true
+  - name: github
+    url: https://github.com/eshishkin
+    icon: github.svg
+    footer: true
+  - name: linkedin
+    url: https://www.linkedin.com/in/eugene-shishkin
+    icon: linkedin.svg
+    footer: true
+  - name: vk
+    url: https://vk.com/eugene_shishkin
+    icon: vk.svg
+
+colors:
+  primary: "#3b82f6"
+  secondary: "#10b981"
+  dark: "#1f2937"
+  light: "#f3f4f6"
+  text: "#111827"

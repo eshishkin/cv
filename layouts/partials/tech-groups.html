@@ -1,0 +1,15 @@
+<section id="tech" class="mb-24 py-12">
+    <h2 class="text-4xl font-bold mb-16">{{ .Title }}</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+        {{ range .Params.categories }}
+        <div class="tech-group card">
+            <h3 class="text-xl font-bold mb-4 text-primary">{{ .name }}</h3>
+            <div class="flex flex-wrap gap-2">
+                {{ range .skills }}
+                <span class="badge-skill">{{ . }}</span>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>

@@ -1,0 +1,37 @@
+baseURL: https://eshishkin.github.io/cv/
+languageCode: en-us
+defaultContentLanguage: ru
+
+title: Eugene Shishkin | Engineer. Coder. Problem Solver.
+theme: ""
+
+languages:
+  ru:
+    contentDir: "content/ru"
+    languageName: Русский
+    weight: 2
+    title: Eugene Shishkin | Engineer. Coder. Problem Solver.
+  en:
+    contentDir: "content/en"
+    languageName: English
+    weight: 1
+    title: Eugene Shishkin | Engineer. Coder. Problem Solver.
+
+outputs:
+  home:
+    - HTML
+  section:
+    - HTML
+  taxonomy:
+    - HTML
+  term:
+    - HTML
+
+imaging:
+  anchor: smart
+  quality: 75
+  resampleFilter: box
+
+taxonomies:
+  tag: tags
+  category: categories

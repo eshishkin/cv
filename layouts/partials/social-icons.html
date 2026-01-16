@@ -1,0 +1,30 @@
+{{/* 
+  Social Icons Partial
+  Renders social media icons from configuration
+  Supports dark theme through CSS color inheritance
+  
+  Usage: {{ partial "social-icons.html" . }}
+*/}}
+
+<div class="flex gap-4 justify-center mb-8">
+  {{ range .Site.Params.social }}
+    {{ if .url }}
+    <a href="{{ .url }}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="social-icon"
+       title="{{ humanize .name }}"
+       aria-label="{{ humanize .name }}">
+        {{ $iconPath := printf "icons/%s" .icon }}
+
+        {{ with resources.Get $iconPath }}
+        {{ .Content | safeHTML }}
+        {{ else }}
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        {{ end }}
+    </a>
+    {{ end }}
+  {{ end }}
+</div>

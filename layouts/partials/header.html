@@ -1,0 +1,210 @@
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm transition">
+    <nav class="container mx-auto px-6 py-5 max-w-7xl flex justify-between items-center">
+        <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold text-primary">
+                {{ .Site.Params.author }}
+            </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="desktop-menu flex gap-10 items-center">
+            <a href="#about" class="text-gray-600 hover:text-primary transition font-medium">{{ i18n "about" }}</a>
+            <a href="#skills" class="text-gray-600 hover:text-primary transition font-medium">{{ i18n "skills" }}</a>
+            <a href="#experience" class="text-gray-600 hover:text-primary transition font-medium">{{ i18n "experience" }}</a>
+            <a href="#education" class="text-gray-600 hover:text-primary transition font-medium">{{ i18n "education" }}</a>
+            <a href="#tech" class="text-gray-600 hover:text-primary transition font-medium">{{ i18n "tech" }}</a>
+            <a href="#achievements" class="text-gray-600 hover:text-primary transition font-medium">{{ i18n "achievements" }}</a>
+            <!-- Theme Switcher -->
+            <button id="theme-switcher-btn" class="theme-switcher-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <svg class="sun-icon" viewBox="0 0 576 512" fill="currentColor">
+                    <path d="M178.2-10.1c7.4-3.1 15.8-2.2 22.5 2.2l87.8 58.2 87.8-58.2c6.7-4.4 15.1-5.2 22.5-2.2S411.4-.5 413 7.3l20.9 103.2 103.2 20.9c7.8 1.6 14.4 7 17.4 14.3s2.2 15.8-2.2 22.5l-58.2 87.8 58.2 87.8c4.4 6.7 5.2 15.1 2.2 22.5s-9.6 12.8-17.4 14.3L433.8 401.4 413 504.7c-1.6 7.8-7 14.4-14.3 17.4s-15.8 2.2-22.5-2.2l-87.8-58.2-87.8 58.2c-6.7 4.4-15.1 5.2-22.5 2.2s-12.8-9.6-14.3-17.4L143 401.4 39.7 380.5c-7.8-1.6-14.4-7-17.4-14.3s-2.2-15.8 2.2-22.5L82.7 256 24.5 168.2c-4.4-6.7-5.2-15.1-2.2-22.5s9.6-12.8 17.4-14.3L143 110.6 163.9 7.3c1.6-7.8 7-14.4 14.3-17.4zM207.6 256a80.4 80.4 0 1 1 160.8 0 80.4 80.4 0 1 1 -160.8 0zm208.8 0a128.4 128.4 0 1 0 -256.8 0 128.4 128.4 0 1 0 256.8 0z"/>
+                </svg>
+                <svg class="moon-icon hidden" fill="currentColor" viewBox="0 0 512 512">
+                    <path d="M256 0C114.6 0 0 114.6 0 256S114.6 512 256 512c68.8 0 131.3-27.2 177.3-71.4 7.3-7 9.4-17.9 5.3-27.1s-13.7-14.9-23.8-14.1c-4.9 .4-9.8 .6-14.8 .6-101.6 0-184-82.4-184-184 0-72.1 41.5-134.6 102.1-164.8 9.1-4.5 14.3-14.3 13.1-24.4S322.6 8.5 312.7 6.3C294.4 2.2 275.4 0 256 0z"/>
+                </svg>
+            </button>
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                {{ range $.Site.Home.AllTranslations }}
+                <a href="{{ .RelPermalink }}"
+                   class="lang-btn {{ if eq .Lang $.Site.Language.Lang }}active{{ end }}">
+                    {{ .Language.LanguageName }}
+                </a>
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+            <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="close-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#about" class="mobile-menu-link">{{ i18n "about" }}</a>
+            <a href="#skills" class="mobile-menu-link">{{ i18n "skills" }}</a>
+            <a href="#experience" class="mobile-menu-link">{{ i18n "experience" }}</a>
+            <a href="#education" class="mobile-menu-link">{{ i18n "education" }}</a>
+            <a href="#tech" class="mobile-menu-link">{{ i18n "tech" }}</a>
+            <a href="#achievements" class="mobile-menu-link">{{ i18n "achievements" }}</a>
+            
+            <!-- Mobile Theme Switcher -->
+            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 2px solid var(--border-color); display: flex; align-items: center; justify-content: space-between;">
+                <span style="font-weight: 500; color: var(--text);">Theme</span>
+                <button id="mobile-theme-switcher-btn" class="theme-switcher-btn" aria-label="Toggle dark mode" style="margin-left: 0; margin-right: 0;">
+                    <svg class="sun-icon" viewBox="0 0 576 512" fill="currentColor">
+                        <path d="M178.2-10.1c7.4-3.1 15.8-2.2 22.5 2.2l87.8 58.2 87.8-58.2c6.7-4.4 15.1-5.2 22.5-2.2S411.4-.5 413 7.3l20.9 103.2 103.2 20.9c7.8 1.6 14.4 7 17.4 14.3s2.2 15.8-2.2 22.5l-58.2 87.8 58.2 87.8c4.4 6.7 5.2 15.1 2.2 22.5s-9.6 12.8-17.4 14.3L433.8 401.4 413 504.7c-1.6 7.8-7 14.4-14.3 17.4s-15.8 2.2-22.5-2.2l-87.8-58.2-87.8 58.2c-6.7 4.4-15.1 5.2-22.5 2.2s-12.8-9.6-14.3-17.4L143 401.4 39.7 380.5c-7.8-1.6-14.4-7-17.4-14.3s-2.2-15.8 2.2-22.5L82.7 256 24.5 168.2c-4.4-6.7-5.2-15.1-2.2-22.5s9.6-12.8 17.4-14.3L143 110.6 163.9 7.3c1.6-7.8 7-14.4 14.3-17.4zM207.6 256a80.4 80.4 0 1 1 160.8 0 80.4 80.4 0 1 1 -160.8 0zm208.8 0a128.4 128.4 0 1 0 -256.8 0 128.4 128.4 0 1 0 256.8 0z"/>
+                    </svg>
+                    <svg class="moon-icon hidden" fill="currentColor" viewBox="0 0 512 512">
+                        <path d="M256 0C114.6 0 0 114.6 0 256S114.6 512 256 512c68.8 0 131.3-27.2 177.3-71.4 7.3-7 9.4-17.9 5.3-27.1s-13.7-14.9-23.8-14.1c-4.9 .4-9.8 .6-14.8 .6-101.6 0-184-82.4-184-184 0-72.1 41.5-134.6 102.1-164.8 9.1-4.5 14.3-14.3 13.1-24.4S322.6 8.5 312.7 6.3C294.4 2.2 275.4 0 256 0z"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Language Switcher -->
+            <div class="mobile-lang-switcher">
+                {{ range $.Site.Home.AllTranslations }}
+                <a href="{{ .RelPermalink }}"
+                   class="mobile-lang-link {{ if eq .Lang $.Site.Language.Lang }}active{{ end }}">
+                  {{ .Language.LanguageName }}
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = mobileMenuBtn.querySelector('.hamburger-icon');
+    const closeIcon = mobileMenuBtn.querySelector('.close-icon');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+    function toggleMenu() {
+        mobileMenu.classList.toggle('active');
+        hamburgerIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    }
+
+    function closeMenu() {
+        mobileMenu.classList.remove('active');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+
+    // Close menu when clicking on a link
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Close menu when clicking outside
+    mobileMenu.addEventListener('click', function(e) {
+        if (e.target === mobileMenu) {
+            closeMenu();
+        }
+    });
+});
+
+// Theme Switcher
+document.addEventListener('DOMContentLoaded', function() {
+    const themeSwitcherBtn = document.getElementById('theme-switcher-btn');
+    const mobileThemeSwitcherBtn = document.getElementById('mobile-theme-switcher-btn');
+    const html = document.documentElement;
+    const THEME_STORAGE_KEY = 'theme-preference';
+
+    // Initialize theme on page load
+    function initializeTheme() {
+        // Check localStorage for saved preference
+        const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+        
+        if (savedTheme) {
+            setTheme(savedTheme);
+        } else {
+            // Check system preference
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            setTheme(prefersDark ? 'dark' : 'light');
+        }
+    }
+
+    // Set theme
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            html.setAttribute('data-theme', 'dark');
+            updateThemeSwitcherIcons('dark');
+        } else {
+            html.removeAttribute('data-theme');
+            updateThemeSwitcherIcons('light');
+        }
+        localStorage.setItem(THEME_STORAGE_KEY, theme);
+    }
+
+    // Toggle theme
+    function toggleTheme() {
+        const currentTheme = html.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+    }
+
+    // Update theme switcher icons visibility
+    function updateThemeSwitcherIcons(theme) {
+        // Desktop switcher
+        if (themeSwitcherBtn) {
+            const sunIcon = themeSwitcherBtn.querySelector('.sun-icon');
+            const moonIcon = themeSwitcherBtn.querySelector('.moon-icon');
+            
+            if (theme === 'dark') {
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            } else {
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            }
+        }
+
+        // Mobile switcher
+        if (mobileThemeSwitcherBtn) {
+            const sunIcon = mobileThemeSwitcherBtn.querySelector('.sun-icon');
+            const moonIcon = mobileThemeSwitcherBtn.querySelector('.moon-icon');
+            
+            if (theme === 'dark') {
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            } else {
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            }
+        }
+    }
+
+    // Add event listeners
+    if (themeSwitcherBtn) {
+        themeSwitcherBtn.addEventListener('click', toggleTheme);
+    }
+    if (mobileThemeSwitcherBtn) {
+        mobileThemeSwitcherBtn.addEventListener('click', toggleTheme);
+    }
+
+    // Listen for system preference changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        if (!localStorage.getItem(THEME_STORAGE_KEY)) {
+            setTheme(e.matches ? 'dark' : 'light');
+        }
+    });
+
+    // Initialize theme
+    initializeTheme();
+});
+</script>
