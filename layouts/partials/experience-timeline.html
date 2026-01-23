@@ -40,11 +40,11 @@
                     {{ if $exp.technologiesUsed }}
                     <div class="mt-4">
                         <h4 class="text-lg font-bold text-primary mb-2 text-left">{{ i18n "technologies_used" }}</h4>
-                        <ul class="list-disc list-inside text-gray-700 text-left">
+                        <div class="flex flex-wrap gap-2">
                             {{ range $exp.technologiesUsed }}
-                            <li>{{ . | markdownify }}</li>
+                            <span class="badge-skill">{{ . }}</span>
                             {{ end }}
-                        </ul>
+                        </div>
                     </div>
                     {{ end }}
                 </div>
