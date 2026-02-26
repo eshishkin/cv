@@ -2,7 +2,7 @@
 title: Опыт работы
 experiences:
   - company: "Ardecs"
-    company_url: "http://www.ardecs.com/?lang=ru"
+    company_url: "https://www.ardecs.com/?lang=ru"
     customer: "Аутстафф"
     role: "Lead Software Engineer"
     description: "Разработка цифровых сервисов для малого и микро-бизнеса"
@@ -23,7 +23,7 @@ experiences:
       - Mongo DB
 
   - company: "Ardecs"
-    company_url: "http://www.ardecs.com/?lang=ru"
+    company_url: "https://www.ardecs.com/?lang=ru"
     role: "Lead Software Engineer"
     description: "Небольшой проект по реализации сервис транскрибации"
     startDate: "Август 2025"
@@ -42,7 +42,7 @@ experiences:
       - Whisper
 
   - company: "Ardecs"
-    company_url: "http://www.ardecs.com/?lang=ru"
+    company_url: "https://www.ardecs.com/?lang=ru"
     customer: "Аутстафф"
     role: "Lead Software Engineer"
     description: "Разработка кеширующего слоя над банковской АБС"
@@ -74,7 +74,7 @@ experiences:
       - Mongo DB
 
   - company: "Ardecs"
-    company_url: "http://www.ardecs.com/?lang=ru"
+    company_url: "https://www.ardecs.com/?lang=ru"
     customer: "Аутстафф"
     role: "Middle & Senior Software Engineer"
     description: "Разработка системы/портала для публикации научных трудов / статей для крупного зарубежного издательства"
@@ -104,7 +104,7 @@ experiences:
       - Redis
 
   - company: "Ardecs"
-    company_url: "http://www.ardecs.com/?lang=ru"
+    company_url: "https://www.ardecs.com/?lang=ru"
     role: "Junior Software Engineer"
     description: "Разработка системы для автоматизации процессов локальной типографии"
     startDate: "Май 2012"
