@@ -13,10 +13,10 @@ social:
   - name: site
     url: https://eshishkin.github.io
     icon: globe.svg
-  - name: telegram
-    url: https://t.me/eshishkin
-    icon: telegram.svg
-    footer: true
+#  - name: telegram
+#    url: https://t.me/eshishkin
+#    icon: telegram.svg
+#    footer: true
   - name: github
     url: https://github.com/eshishkin
     icon: github.svg
